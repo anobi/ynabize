@@ -42,6 +42,6 @@ for line in infile:
     else:
         outflow = flow
 
-    output = "%s;%s;%s;%s;%s;%s\n" % (date, payee, 'IMPORT',
+    output = "%s,%s,%s,%s,%s,%s\n" % (date, payee, 'IMPORT',
                                       '', outflow, inflow)
     outfile.write(output)
